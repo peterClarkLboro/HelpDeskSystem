@@ -1,0 +1,462 @@
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0%;
+	font-family: Arial;
+}
+
+.main {
+	/*grid-template-rows: 5% 95%;*/
+	background-color: #FFFFFF;
+}
+
+.topBar {
+	font-size: 20px;
+	color: #203864;
+	box-shadow: -1px -14px 13px 17px #888888;
+	width: 100vw;
+	height: 2vh;
+	padding: 10px;
+	position: fixed;
+	background: #FFFFFF;
+	z-index: 10;
+	top: 0;
+	/*position: fixed;*/
+}
+
+#leftBar {
+	/*grid-row: 2;*/
+	height: 100%;
+	width: 33%;
+	background-color: #FFFFFF;
+	box-shadow: 10px 0 5px -2px #888888;
+	position: fixed;
+	/*position: fixed;*/
+}
+
+.timeline {
+	padding-top: 4%;
+	padding-left: 34%;
+	/*grid-row: 2;*/
+}
+
+#question {
+	color: #607D8B;
+	text-align: 30%;
+	margin-left: 40px;
+	margin-top: 10px;
+	margin-bottom: -60px;
+	font-size: 60px;
+}
+
+#problemID {
+	color: #607D8B;
+	margin-left: 100px;
+	margin-bottom: -30px;
+	text-align: center-left;
+	font-size: 30px;
+}
+
+#problemDateTime {
+	color: #607D8B;
+	margin-left: 100px;
+	margin-bottom: 20px;
+	text-align: center-right;
+	font-size: 20px;
+}
+
+.options button {
+	font-size: 18px;
+	background-color: #FFFFFF;
+	border: 1px solid #ddd;
+	color: #607D8B;
+	width: 50%;
+	height: 30px;
+	cursor: pointer;
+	float: left;
+}
+
+.options button:first-child{
+	border-left: none;
+}
+
+.options button:not(:last-child){
+	border-right: none;
+}
+
+.options button:last-child{
+	border-right: none;
+}
+
+.options:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.options button:hover {
+	background-color: #EAF2F2
+}
+
+.options button:focus {
+	background-color: #F4FBFC
+}
+
+#info table {
+	width: 100%;
+	height: 50px;
+}
+
+#info th {
+	border-bottom: 1px solid #ddd;
+	color: #607D8B;
+	font-size: 12px;
+	text-align: left;
+	padding: 10px;
+	width: 33%;
+}
+
+#info td {
+	border-bottom: 1px solid #ddd;
+	color: #000000;
+	font-size: 12px;
+	width: 67%;
+	padding: 10px;
+}
+
+#info button {
+	font-size: 12px;
+	color: #607D8B;
+	background: #FFFFFF;
+	border: 0px;
+	margin-left: 90%;
+	text-decoration: underline;
+}
+
+#info button:hover {
+	color: #000000;
+}
+
+#solu {
+	margin-top: -360px;
+}
+
+#filter {
+	padding: 20px;
+	color: #7F7F7F;
+	font-size: 16px;
+	background-color: #FBFBFC;
+	border-bottom: 1px solid #ddd;
+}
+
+#solu table {
+	width: 100%;
+	height: 50px;
+}
+
+#solu th {
+	border-bottom: 1px solid #ddd;
+	color: #607D8B;
+	font-size: 14px;
+	vertical-align: top;
+	text-align: left;
+	padding: 10px;
+	width: 33%;
+}
+
+#solu td {
+	border-bottom: 1px solid #ddd;
+	color: #607D8B;
+	font-size: 14px;
+	width: 66;
+	padding: 10px;
+}
+
+#extraInfo {
+	color: #000000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 14px;
+}
+
+#solu button{
+	background-color: #FFFFFF;
+	color: #7F7F7F;
+	border: 0px;
+	text-decoration: underline;
+}
+
+/*BORDER*/
+
+.box{
+	border: 1px solid #f4f6f6;
+}
+
+.card{
+	margin-left:5%;
+	margin-bottom:5%;
+	height: 400px;
+	width: 90%;
+}
+
+.categoryArea{
+	height: 15%;
+	width: 100%;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	display:grid;
+	grid-template-columns: auto auto;
+	
+}
+
+.incomingArea{
+	background-color:#c5deb4;
+}
+
+.outgoingArea{
+	background-color:#cbbe97;
+}
+
+.solutionArea{
+	background-color:#97dfb8;
+}
+
+.notesArea{
+	background-color:#becad0;
+}
+
+.titleText{
+	grid-column:1/2;
+	margin-top:auto;
+	margin-bottom:auto;
+	color: white;
+	font-size: 200%;
+	padding-left:2%;
+}
+
+ .dateText{
+	margin-left:auto;
+	margin-top:auto;
+	margin-bottom:auto;
+	grid-column:2/2;
+	color: white;
+	font-size: 150%; 
+	padding-right:2%;
+}
+
+.createdBy{
+	height: 15%;
+	width: 100%;
+}
+
+.customerDetails{
+	height: 25%;
+	width: 100%;
+	
+}
+
+.customerDetailsInput{
+	height: 30%;
+	width: 100%;
+}
+
+.customerLookupForm{
+	margin-top:.9rem;
+}
+
+.descriptionField{
+	height: 45%;
+	width: 100%;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
+.extDescriptionField{
+	height: 70%;
+	width: 100%;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
+.updateDescriptionCallField{
+	height: 45%;
+	width: 100%;
+}
+
+.updateDescriptionSolutionNotesField{
+	height: 75%;
+	width: 100%;
+}
+
+.saveField{
+	height: 10%;
+	width: 100%;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
+.field{
+	float: left;
+}
+.data{
+	float: left;
+}
+
+.button{
+	border-radius:5px;				
+}
+
+.cancel{
+	background-color: #e4e9ec;
+	border: 1px solid #e4e9ec;
+	float:right;
+	margin-right:2%;
+	transform: translateY(25%);
+	width:10em;
+	height:2em;
+}
+
+.save{
+	background-color: #c79e20;
+	border: 1px solid #c79e20;
+	float:right;
+	margin-right:2%;
+	transform: translateY(25%);
+	width:10em;
+	height:2em;
+}
+
+.addCardsArea{
+	margin-bottom:2%;
+	width:90%;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-gap:5%;
+	margin-left: 5%;
+}
+
+.addCard{
+	background: none;
+	border: 1px solid #bac6ce;
+	color:#bac6ce;
+	
+	font-size:110%;
+}
+
+.descriptionBox{
+	width:100%;
+	height:179px; 
+	box-sizing: border-box;         /* For IE and modern versions of Chrome */
+	-moz-box-sizing: border-box;    /* For Firefox                          */
+	-webkit-box-sizing: border-box; /* For Safari                           */
+	border:none;
+	outline:none;
+	resize:none;
+}
+
+
+@media screen and (max-width: 730px) { /*PHONE HORIZONTAL*/
+	.timeline {
+		padding-top: 2%;
+		padding-left: 0%;
+	}
+	
+	.addCardsArea{
+		grid-gap:2.5%;
+
+	}
+	
+	.topPanel a {
+		font-size: 24px;
+	}
+
+	.topPanel .mobileHide {
+		display: none;
+		color: #ffffff;
+	}
+	
+	#leftBar {
+		position: static;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) { /* PHONE VERTICAL*/	  
+	
+	.addCardsArea{
+		
+		grid-template-columns:auto;
+		padding-bottom:5%;
+	
+	}
+	
+	.card{
+		margin-left:0%;
+		width: 100%;
+	}
+	
+
+	
+	.titleText{
+		font-size: 120%;
+		padding-left:7%;
+
+		
+	}
+
+	.dateText{
+		padding-right:7%;
+		font-size: 70%; 	
+	}
+	
+	.cancel{
+		float:left;
+		margin-left:5%;
+	}
+
+	.save{
+		margin-right:5%;
+	}
+
+	.textbox{
+		width:30%;
+	}
+	
+	
+}
+
+/* BORDER */
+.topPanel {
+    overflow: hidden;
+    box-shadow: -1px -14px 13px 17px #888888;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: #ffffff;
+}
+
+.topPanel a {
+    float: left;
+    color: #203864;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px; /*Keeps size static across all res, found it better this way*/
+    font-size: 18px; /*18px  2vh*/
+    display: block;
+    overflow: hidden;
+}
+
+.topPanel .mobileHide {
+    color: #7F7F7F;
+}
+
+.userCircle {
+    border-radius: 50%;
+    text-align: center;
+    border: 0px solid #666;
+    display: block;
+    background: #F2F2F2;
+    color: #7F7F7F;
+}

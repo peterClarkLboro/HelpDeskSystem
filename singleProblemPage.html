@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<!-- Last edited by Peter Clark 15:27 27/10/2019 -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problem View</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="script.js"></script>
+</head>
+<body onload="details()">
+<!--<div class="topBar">Make-It-All Helpdesk	|	Operator</div>-->
+<div class="topPanel">
+	<a href="#" id="sideButton">Make-It-All-Helpdesk</a>
+	<div class="dropDownTable" id="dropButton">
+		<a class="userCircle" style="float: right">FL</a> <!--Float right only works when here, if in css doesn't work-->
+		<a class = "mobileHide" style="float:right;"> Firstname Lastname </a>
+	</div>
+</div>
+<div class="main">
+<div id="leftBar">
+<br /><br />
+	<div class="topSection">
+		<div id="question">
+			?
+		</div>
+		<div id="problemID">
+			#12350
+		</div>
+		<div id="problemDateTime">
+			<br \> Created 25/04/2019 14:21
+		</div>
+	</div>
+	<div class="options">
+		<button onclick="details()">Details</button>
+		<button onclick="solutions()">Solutions</button>
+	</div>
+	<div id="info">
+		<table>
+			<tr>
+				<th>Customer details</th>
+				<td>Name here<br />Department<br />Telephone number etc.</td>
+			</tr>
+			<tr>
+				<th>Date & time</th>
+				<td>25/04/2019 14:21</td>
+			</tr>
+			<tr>
+				<th>Hardware serial</th>
+				<td>Hardware serial</td>
+			</tr>
+			<tr>
+				<th>Operating system</th>
+				<td>Operating system</td>
+			</tr>
+			<tr>
+				<th>Software</th>
+				<td>Software</td>
+			</tr>
+			<tr>
+				<th>License key</th>
+				<td>0000-0000-0000-0000</td>
+			</tr>
+			<tr>
+				<th>Problem type</th>
+				<td>Problem type</td>
+			</tr>
+			<tr>
+				<th>People</th>
+				<td>Alice<br />Bert</td>
+			</tr>
+		</table>
+		<button>Edit</button>
+	</div>
+	<div id="solu">
+		<div id="filter">
+			<form action="">
+			Filter By:
+				<input type="checkbox" name="pType" value="OS"> OS
+				<input type="checkbox" name="pType" value="Hardware"> Hardware
+				<input type="checkbox" name="pType" value="Software"> Software
+			</form>
+		</div>
+		<table>
+			<tr>
+				<th>> #12300</th>
+				<td>Subject line or snippet here...</td>
+			</tr>
+			<tr>
+				<th>> #12301</th>
+				<td>Subject line or snippet here...</td>
+			</tr>
+			<tr>
+				<th>> #12302</th>
+				<td>Subject line or snippet here...</td>
+			</tr>
+			<tr>
+				<th>> #12303</th>
+				<td>Subject line or snippet here...</td>
+			</tr>
+			<tr>
+				<th>\/ #12304</th>
+				<td>Subject line or snippet here... <br \>
+				<div id="extraInfo">Solution: Switch it, unplug it and then turn it back on</div>
+				<u><button>See More</button><button>Use Solution</button></u>
+				</td>
+			</tr>
+			<tr>
+				<th>> #12305</th>
+				<td>Subject line or snippet here...</td>
+			</tr>
+			<tr>
+				<th>> #12306</th>
+				<td>Subject line or snippet here...</td>
+			</tr>
+			<tr>
+				<th>> #12307</th>
+				<td>Subject line or snippet here...</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div class="timeline">
+
+	<div class="addCardsArea">
+		<input type="submit" name="incomingButton" class="addCard button" value="Incoming Call">
+		<input type="submit" name="outgoingButton" class="addCard button" value="Outgoing Call">
+		<input type="submit" name="notesButton" class="addCard button" value="Notes Call">
+		<input type="submit" name="referButton" class="addCard button" value="Refer Specialist">
+		<input type="submit" name="solutionButton" class="addCard button" value="Solution">
+	</div>
+	
+	<div class="card">
+		<div class="incomingArea categoryArea box"> 
+				
+				
+					<p class="titleText">Incoming Call </p> 
+					<p class="dateText"> 00/00/00 00:00 &nbsp &nbsp <a href="">Edit</a></p>
+			
+				
+		</div>
+		<div class="createdBy box">
+			<p class="field" >Conducted By: &nbsp </p>
+			<p class="data"> Harrison Dell</p>
+		</div>
+		<div class="customerDetails box"> 
+			<p class="field" >Customer Details: &nbsp </p>
+			<p class="data"> Name <br> Department <br>phone number,</p> 
+		</div>
+		<div class="descriptionField box">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. </div>
+	</div>
+	<div class="card">
+		<div class="outgoingArea categoryArea box">
+
+			
+					<p class="titleText">Outgoing Call </p> 
+					<p class="dateText"> 00/00/00 00:00 &nbsp &nbsp <a href="">Edit</a></p>
+				
+		</div>
+		<div class="createdBy box">
+			<p class="field" >Conducted By: &nbsp </p>
+			<p class="data"> Harrison Dell</p>
+		</div>
+		<div class="customerDetails box">
+			<p class="field" >Customer Details: &nbsp </p>
+			<p class="data"> Name <br> 
+							 Department <br>
+							 phone number
+			</p> 
+		</div>
+		<div class="descriptionField box"></div>
+	</div>
+	<div class="card">
+		<div class="notesArea categoryArea box">
+			
+					<p class="titleText">Notes</p> 
+					<p class="dateText"> 00/00/00 00:00 &nbsp &nbsp <a href="">Edit</a></p>
+				
+		</div>
+		<div class="createdBy box">
+			<p class="field" >Author: &nbsp </p>
+			<p class="data"> Harrison Dell</p>
+		</div>
+		<div class="extDescriptionField box"></div>
+	</div>
+	<div class="card">
+		<div class="solutionArea categoryArea box">
+			
+					<p class="titleText">Solution</p> 
+					<p class="dateText"> 00/00/00 00:00 &nbsp &nbsp <a href="">Edit</a></p>
+		</div>
+		<div class="createdBy box">
+			<p class="field" >Author: &nbsp </p>
+			<p class="data"> Harrison Dell</p>
+		</div>
+		<div class="extDescriptionField box"></div>
+	</div>
+	<div class="card">
+		<div class="outgoingArea categoryArea box">
+
+				<p class="titleText">Outgoing Call </p> 
+
+		</div>
+		<div class="customerDetailsInput box">
+			<p class="field" >Customer Details: &nbsp </p>
+				<form class="customerLookupForm">
+					<input type="text" name="customerLookup" class="textbox">
+					<input type="submit" value="Lookup">
+				</form> 
+			<p class="data"> 
+				Name <br> 
+				Department <br>
+				phone number,
+			</p> 
+		</div>
+		<div class="updateDescriptionCallField box">
+		
+			<form>
+				<textarea placeholder="Description/notes" name="descriptionBox" class="descriptionBox";></textarea>
+			</form>
+		</div>
+		<div class="saveField box">
+
+			<input type="submit" name="saveButton" class="save button" value="Save">
+
+			<input type="submit" name="cancelButton" class="cancel button" value="Cancel">
+
+		</div>
+	</div>
+	
+	<div class="card">
+		<div class="solutionArea categoryArea box">
+			
+					<p class="titleText">Solution</p> 
+		</div>
+		<div class="updateDescriptionSolutionNotesField  box">
+		
+			<form>
+				<textarea placeholder="Description/notes" name="descriptionBox" class="descriptionBox";></textarea>
+			</form>
+		</div>
+		<div class="saveField box">
+
+			<input type="submit" name="saveButton" class="save button" value="Save">
+
+			<input type="submit" name="cancelButton" class="cancel button" value="Cancel">
+
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
